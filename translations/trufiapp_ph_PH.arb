@@ -1,0 +1,665 @@
+{
+  "@@locale": "ph_PH",
+  "@@last_modified": "2020-01-15T02:51:27.033880",
+  "title": "Jeepney App",
+  "@title": {
+    "description": "The application's name",
+    "type": "text",
+    "placeholders": {}
+  },
+  "titlehaha": "{value}",
+  "@titlehaha": {
+    "description": "The application's name",
+    "type": "text",
+    "placeholders": {
+      "value": {}
+    }
+  },
+  "tagline": "A Jeepney Navigation for Commuters using Android App",
+  "@tagline": {
+    "description": "A short marketing sentence that describes the app",
+    "type": "text",
+    "placeholders": {}
+  },
+  "description": "Ang pinakamahusay na paraan upang maglakbay kasama ang mga dyip sa pamamagitan ng Valenzuela City.",
+  "@description": {
+    "description": "A sentence that describes the application's purpose",
+    "type": "text",
+    "placeholders": {}
+  },
+  "version": "Version {version}",
+  "@version": {
+    "description": "The application's version",
+    "type": "text",
+    "placeholders": {
+      "version": {
+        "example": "1.0"
+      }
+    }
+  },
+  "alertLocationServicesDeniedTitle": "Walang lokasyon",
+  "@alertLocationServicesDeniedTitle": {
+    "description": "Title of dialog that explains that access to location services was denied",
+    "type": "text",
+    "placeholders": {}
+  },
+  "alertLocationServicesDeniedMessage": "Mangyaring tiyakin na ang iyong aparato ay may GPS at ang mga setting ng lokasyon ay isinaaktibo.",
+  "@alertLocationServicesDeniedMessage": {
+    "description": "Text of dialog that explains that access to location services was denied",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonOK": "OK",
+  "@commonOK": {
+    "description": "OK button label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonCancel": "Cancel",
+  "@commonCancel": {
+    "description": "Cancel button label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonGoOffline": "Mag-offline",
+  "@commonGoOffline": {
+    "description": "Go offline button label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonGoOnline": "Mag-online",
+  "@commonGoOnline": {
+    "description": "Go online button label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonDestination": "Destinasyon",
+  "@commonDestination": {
+    "description": "Destination field label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonOrigin": "Pinagmulan",
+  "@commonOrigin": {
+    "description": "Origin field label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonNoInternet": "Walang koneksyon sa internet.",
+  "@commonNoInternet": {
+    "description": "Message when internet connection is lost",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonFailLoading": "Nabigong i-load ang data",
+  "@commonFailLoading": {
+    "description": "Message when data could not be loaded",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonUnknownError": "Hindi kilalang error",
+  "@commonUnknownError": {
+    "description": "Message when an unknown error has occured",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonError": "Error",
+  "@commonError": {
+    "description": "Message when an error has occured",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRouteError": "Paumanhin, hindi namin mahanap ang isang ruta. Ano ang gusto mong gawin?",
+  "@noRouteError": {
+    "description": "Message when no route could be found after a route search",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRouteErrorActionCancel": "Subukan ang isa pang destinasyon",
+  "@noRouteErrorActionCancel": {
+    "description": "Button label to try another destination when no route could be found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRouteErrorActionReportMissingRoute": "Iulat ang isang nawawalang ruta",
+  "@noRouteErrorActionReportMissingRoute": {
+    "description": "Button label to report a missing route when no route could be found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRouteErrorActionShowCarRoute": "Ipakita ang ruta sa pamamagitan ng kotse",
+  "@noRouteErrorActionShowCarRoute": {
+    "description": "Button label to show the car route when no route could be found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorServerUnavailable": "Paumanhin. Pansamantalang hindi magagamit ang planner ng paglalakbay. Subukang muli mamaya.",
+  "@errorServerUnavailable": {
+    "description": "Message that is displayed when the trip planning server was not available",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorOutOfBoundary": "Hindi pwede ang biyahe. Maaari mong sinusubukan na planuhin ang isang paglalakbay sa labas ng hangganan ng data ng mapa.",
+  "@errorOutOfBoundary": {
+    "description": "Message that is displayed when a trip could not be planned, because it would be outside of map data boundaries",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorPathNotFound": "Hindi pwede ang biyahe. Ang iyong panimula o pagtatapos ay maaaring hindi ligtas na ma-access (halimbawa, maaari kang magsimula sa isang tirahang kalye na konektado lamang sa isang highway).",
+  "@errorPathNotFound": {
+    "description": "Message that is displayed when a trip could not be planned, because the start or end point is not safely accessible",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorNoTransitTimes": "Walang magagamit na mga oras ng pagbiyahe. Ang petsa ay maaaring lumipas o napakalayo sa hinaharap o maaaring hindi serbisyo ng transit para sa iyong paglalakbay sa oras na iyong pinili",
+  "@errorNoTransitTimes": {
+    "description": "Message that is displayed when a trip could not be planned, because there were no valid transit times available for the requested time",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorServerTimeout": "Ang tagaplano ng biyahe ay masyadong mahabang paraan upang maproseso ang iyong kahilingan. Subukang muli mamaya.",
+  "@errorServerTimeout": {
+    "description": "Message that is displayed when a trip could not be planned, because the server is taking too long to respond",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorTrivialDistance": "Ang pinagmulan ay nasa loob ng isang maliit na distansya ng patutunguhan.",
+  "@errorTrivialDistance": {
+    "description": "Message that is displayed when a trip could not be planned, because origin and destination are too close to each other",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorServerCanNotHandleRequest": "Ang kahilingan ay may mga error na ang server ay hindi nais o magproseso.",
+  "@errorServerCanNotHandleRequest": {
+    "description": "Message that is displayed when a trip could not be planned, because the request had errors",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorUnknownOrigin": "Hindi kilala ang pinagmulan. Maaari ka bang maging mas descriptive?",
+  "@errorUnknownOrigin": {
+    "description": "Message that is displayed when a trip could not be planned, because the origin was not found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorUnknownDestination": "Hindi kilala ang patutunguhan. Maaari ka bang maging mas descriptive?",
+  "@errorUnknownDestination": {
+    "description": "Message that is displayed when a trip could not be planned, because the destination was not found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorUnknownOriginDestination": "Ang parehong pinagmulan at patutunguhan ay hindi kilala. Maaari ka bang maging mas descriptive?",
+  "@errorUnknownOriginDestination": {
+    "description": "Message that is displayed when a trip could not be planned, because both origin and destination were not found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorNoBarrierFree": "Parehong pinagmulan at patutunguhan ay hindi magagamit ang wheelchair",
+  "@errorNoBarrierFree": {
+    "description": "Message that is displayed when a trip could not be planned, because both origin and destination are not wheelchair accessible",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorAmbiguousOrigin": "Ang tagaplano ng paglalakbay ay hindi sigurado sa lokasyon na nais mong simulan. Mangyaring pumili mula sa mga sumusunod na pagpipilian, o mas tiyak.",
+  "@errorAmbiguousOrigin": {
+    "description": "Message that is displayed when a trip could not be planned, because the specified origin is ambiguous",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorAmbiguousDestination": "Ang tagaplano ng paglalakbay ay hindi sigurado sa lokasyon na nais mong puntahan. Mangyaring pumili mula sa mga sumusunod na pagpipilian, o mas tiyak.",
+  "@errorAmbiguousDestination": {
+    "description": "Message that is displayed when a trip could not be planned, because the specified destination is ambiguous",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorAmbiguousOriginDestination": "Parehong pinagmulan at patutunguhan ay hindi maliwanag. Mangyaring pumili mula sa mga sumusunod na pagpipilian, o mas tiyak.",
+  "@errorAmbiguousOriginDestination": {
+    "description": "Message that is displayed when a trip could not be planned, because the specified origin and destination are ambiguous",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchHintOrigin": "Piliin ang panimulang punto",
+  "@searchHintOrigin": {
+    "description": "Placeholder text for the origin field (in search state)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchHintDestination": "Piliin ang patutunguhan",
+  "@searchHintDestination": {
+    "description": "Placeholder text for the destination field (in search state)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchItemChooseOnMap": "Pumili sa mapa",
+  "@searchItemChooseOnMap": {
+    "description": "Search option that allows to choose a point on the map",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchItemYourLocation": "Iyong lokasyon",
+  "@searchItemYourLocation": {
+    "description": "Search option that allows to use the current user location",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchItemNoResults": "Walang resulta",
+  "@searchItemNoResults": {
+    "description": "Message that is displayed when no results were found for the search term that was provided",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchTitlePlaces": "Mga Lugar",
+  "@searchTitlePlaces": {
+    "description": "Search section title for common places",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchTitleRecent": "Kamakailan",
+  "@searchTitleRecent": {
+    "description": "Search section title for recent location",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchTitleFavorites": "Mga Paborito",
+  "@searchTitleFavorites": {
+    "description": "Search section title for locations marked as favorites",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchTitleResults": "Mga Resulta ng Paghahanap",
+  "@searchTitleResults": {
+    "description": "Search section title for results found for the provided search term",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchPleaseSelectOrigin": "Piliin ang pinagmulan",
+  "@searchPleaseSelectOrigin": {
+    "description": "Placeholder text for the origin field (in map-visible state)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchPleaseSelectDestination": "Piliin ang patutunguhan",
+  "@searchPleaseSelectDestination": {
+    "description": "Placeholder text for the destination field (in map-visible state)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchFailLoadingPlan": "Nabigong i-load ang plano.",
+  "@searchFailLoadingPlan": {
+    "description": "Message that is displayed when the response of the trip planning request could not be received",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchMapMarker": "Map Marker",
+  "@searchMapMarker": {
+    "description": "Location name displayed in search fields that represents a location choosen on the map",
+    "type": "text",
+    "placeholders": {}
+  },
+  "chooseLocationPageTitle": "Pumili ng isang punto",
+  "@chooseLocationPageTitle": {
+    "description": "Page title when choosing a location on the map",
+    "type": "text",
+    "placeholders": {}
+  },
+  "chooseLocationPageSubtitle": "Pan & zoom mapa sa ilalim ng pin",
+  "@chooseLocationPageSubtitle": {
+    "description": "Page subtitle when choosing a location on the map",
+    "type": "text",
+    "placeholders": {}
+  },
+ "instructionWalk": "Maglakad {duration} ( {distance} ) papunta sa {location}",
+  "@instructionWalk": {
+    "description": "Itinerary instruction (walking)",
+    "type": "text",
+    "placeholders": {
+      "duration": {
+        "example": "10 min"
+      },
+      "distance": {
+        "example": "500 m"
+      },
+      "location": {
+        "example": "Avenida Heroínas"
+      }
+    }
+  },
+  "instructionRide": "Sumakay {vehicle} para sa {duration} ( {distance} ) patungo sa {location}",
+  "@instructionRide": {
+    "description": "Itinerary instruction (vehicle)",
+    "type": "text",
+    "placeholders": {
+      "vehicle": {
+        "example": "Bus 100"
+      },
+      "duration": {
+        "example": "10 min"
+      },
+      "distance": {
+        "example": "500 m"
+      },
+      "location": {
+        "example": "Avenida Heroínas"
+      }
+    }
+  },
+  "instructionVehicleBus": "Jeepney",
+  "@instructionVehicleBus": {
+    "description": "Vehicle name (Bus)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionVehicleMicro": "Micro",
+  "@instructionVehicleMicro": {
+    "description": "Vehicle name (Micro)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionVehicleMinibus": "Minibus",
+  "@instructionVehicleMinibus": {
+    "description": "Vehicle name (Minibus)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionVehicleTrufi": "Trufi",
+  "@instructionVehicleTrufi": {
+    "description": "Vehicle name (Trufi)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionVehicleCar": "Car",
+  "@instructionVehicleCar": {
+    "description": "Vehicle name (Car)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionVehicleGondola": "Gondola",
+  "@instructionVehicleGondola": {
+    "description": "Vehicle name (Gondola)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionDurationMinutes": "{value} min",
+  "@instructionDurationMinutes": {
+    "description": "Itinerary leg duration",
+    "type": "text",
+    "placeholders": {
+      "value": {
+        "example": 10
+      }
+    }
+  },
+  "instructionDistanceKm": "{value} km",
+  "@instructionDistanceKm": {
+    "description": "Itinerary leg distance (km)",
+    "type": "text",
+    "placeholders": {
+      "value": {
+        "example": 10
+      }
+    }
+  },
+  "instructionFarePeso": " ₱ {value}",
+  "@instructionFarePeso": {
+    "description": "Itinerary leg distance (km)",
+    "type": "text",
+    "placeholders": {
+      "value": {
+        "example": 10
+      }
+    }
+  },
+  "instructionDistanceMeters": "{value} m",
+  "@instructionDistanceMeters": {
+    "description": "Itinerary leg distance (m)",
+    "type": "text",
+    "placeholders": {
+      "value": {
+        "example": 100
+      }
+    }
+  },
+  "instructionFare": "{distance}",
+  "@instructionFare": {
+    "description": "Itinerary leg duration",
+    "type": "text",
+    "placeholders": {
+      "distance": {}
+    }
+  },
+  "instructionFare2": "{value} {distance}",
+  "@instructionFare2": {
+    "description": "Itinerary leg duration",
+    "type": "text",
+    "placeholders": {
+      "value": {},
+      "distance": {}
+    }
+  },
+  "menuConnections": "Ipakita ang mga ruta",
+  "@menuConnections": {
+    "description": "Menu item that shows the map/planned trip",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuAbout": "Tungkol sa app",
+  "@menuAbout": {
+    "description": "Menu item that shows the about page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuTeam": "Mga Setting",
+  "@menuTeam": {
+    "description": "Menu item that shows the team page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuFeedback": "Mag-ulat sa LTFRB",
+  "@menuFeedback": {
+    "description": "Menu item that shows the feedback page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuOnline": "Regular",
+  "@menuOnline": {
+    "description": "Menu item that shows the state of online/offline routing",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuAppReview": "I-rate ang app",
+  "@menuAppReview": {
+    "description": "Menu item that triggers a native widget to rate the app",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuShareApp": "Ibahagi ang app",
+  "@menuShareApp": {
+    "description": "Menu item that triggers a native widget to rate the app",
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareAppText": "I-download ang Jeepney App, ang pampublikong transport app para sa Metro Manila, sa {url}",
+  "@shareAppText": {
+    "description": "Text with URL that is used when sharing the app.",
+    "type": "text",
+    "placeholders": {
+      "url": {
+        "example": "https://trufi.share.url"
+      }
+    }
+  },
+  "feedbackContent": "The Land Transportation Franchising and Regulatory Board (LTFRB) has put up a complaint center around the clock. Aside from responding to complaints and grievances, the contact centers will respond to inquiries about any services rendered by the LTFRB.",
+  "@feedbackContent": {
+    "description": "Text displayed on the feedback page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "feedbackContent1": "If you encounter violations involving drivers of public utility jeepneys, condition and state of public vehicle units and other public land transportation-related complaints you can report it via email and LTFRB Facebook where complainants send pictures and videos for evidence, and their 24/7 hotline number - 1342.",
+  "@feedbackContent1": {
+    "description": "Text displayed on the feedback page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "feedbackContent2": "In filing a complaint, the LTFRB will ask the person who reported to the hotline if they are willing to attend a hearing. If they are, the LTFRB will send the complaint to their Legal Division for scheduling and issuance of summons to both complainant and respondent. For complainants who do not want to attend a hearing, the LTFRB will send a Show Cause Order (SCO) or reprimand letter signed by the Chairman. The LTFRB will ask the respondent to reason out and explain why the driver or the operator should not be sanctioned for the reported violation. A response from the driver or operator must be received within 5 days from receipt of the SCO. The complainant will also receive a copy of the SCO and the response letter of the respondent. Sending of summons, SCOs, and reprimand letters are coursed through PhilPost.",
+  "@feedbackContent2": {
+    "description": "Text displayed on the feedback page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "feedbackTitle": "Mag-file ng isang Reklamo",
+  "@feedbackTitle": {
+    "description": "Title displayed on the feedback page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutContent": "Binuo namin ang app na ito upang gawing madali para sa mga tao na gamitin ang sistema ng transportasyon sa Metro Manila at sa nakapalibot na lugar.",
+  "@aboutContent": {
+    "description": "Text displayed on the about page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutLicenses": "Mga Lisensya",
+  "@aboutLicenses": {
+    "description": "Button label to show licenses",
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutOpenSource": " ",
+  "@aboutOpenSource": {
+    "description": "A note about open source",
+    "type": "text",
+    "placeholders": {}
+  },
+  "teamContent": "\nKami ay isang pang-internasyonal na pangkat na tinatawag na Trufi Association na nilikha ang app na ito sa tulong ng maraming mga boluntaryo! Nais mo bang mapagbuti ang Trufi App at maging bahagi ng aming pangkat?",
+  "@teamContent": {
+    "description": "Text displayed on the team page, followed by a email link",
+    "type": "text",
+    "placeholders": {}
+  },
+  "teamSectionRepresentatives": "Mga Kinatawan: {representatives}",
+  "@teamSectionRepresentatives": {
+    "description": "List of representatives",
+    "type": "text",
+    "placeholders": {
+      "representatives": {
+        "example": "Mario, Luigi"
+      }
+    }
+  },
+  "teamSectionTeam": "Pangkat: {teamMembers}",
+  "@teamSectionTeam": {
+    "description": "List of team members",
+    "type": "text",
+    "placeholders": {
+      "teamMembers": {
+        "example": "Peach, Toad, Daisy, Yoshi"
+      }
+    }
+  },
+  "teamSectionTranslations": "Pagsasalin: {translators}",
+  "@teamSectionTranslations": {
+    "description": "List of translators",
+    "type": "text",
+    "placeholders": {
+      "translators": {
+        "example": "Bowser, Koopa, Gumba, Lakitu"
+      }
+    }
+  },
+  "teamSectionRoutes": "Mga ruta: {routeContributors} at lahat ng mga gumagamit na nag-upload ng mga ruta sa OpenStreetMap, tulad ng {osmContributors}. \nMakipag-ugnay sa amin kung nais mong sumali sa komunidad ng OpenStreetMap!",
+  "@teamSectionRoutes": {
+    "description": "List of route contributors",
+    "type": "text",
+    "placeholders": {
+      "routeContributors": {
+        "example": "Wario, Waluigi, Rosalina"
+      },
+      "osmContributors": {
+        "example": "Kamek, Birdo, Toadette, Bowser Jr."
+      }
+    }
+  },
+  "fare1": "Para sa unang 4kms ang minimum na pamasahe ay 9 na PHP ang sumusunod na bawat kilometro ay may dagdag sa pamasahe na 1.50 PhP. Ang base fare o minimum fare ay 9 PHP na naaangkop sa lahat ng mga ruta sa NCR, Rehiyon 3 at Rehiyon 4.",
+  "@fare1": {
+    "description": "Donate menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "fare2": "Discount para sa PWD, Senior Citizen, Student",
+  "@fare2": {
+    "description": "Donate menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "fare3": "Pamasahe",
+  "@fare3": {
+    "description": "Donate menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "fare4": "Lahat ng estudyante ay maaaring makakuha ng (20% discount mula Lunes hanggang Linggo kabilang na ang summer breaks, legal and special legal holidays. Hindi sakop ng pribilehiyong to ang mga Post-graduate students (kumukuha ng kursong medicine, law, masteral, doctoral degrees and the like) o kaya driving o dancing lessons.",
+  "@fare4": {
+    "description": "Donate menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "fare5": "Students, persons with disabilities, and senior citizens are entitled to a 20 percent discount on fares everyday upon presentation of their identification cards.",
+  "@fare5": {
+    "description": "Donate menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "donate": "Mag-donate",
+  "@donate": {
+    "description": "Donate menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "readOurBlog": "Basahin ang aming blog",
+  "@readOurBlog": {
+    "description": "Website menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "followOnFacebook": "Sundan kami sa Facebook",
+  "@followOnFacebook": {
+    "description": "Facebook menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "followOnTwitter": "Sundan kami sa Twitter",
+  "@followOnTwitter": {
+    "description": "Twitter menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "followOnInstagram": "Sundan kami sa Instagram",
+  "@followOnInstagram": {
+    "description": "Instagram menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appReviewDialogTitle": "Natutuwa sa Trufi?",
+  "@appReviewDialogTitle": {
+    "description": "Title of the App Review Dialog used on Android",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appReviewDialogContent": "Suportahan kami sa isang pagsusuri sa Google Play Store.",
+  "@appReviewDialogContent": {
+    "description": "Content of the App Review Dialog used on Android",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appReviewDialogButtonDecline": "Hindi ngayon",
+  "@appReviewDialogButtonDecline": {
+    "description": "Decline button of the App Review Dialog used on Android",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appReviewDialogButtonAccept": "Sumulat ng pagsusuri",
+  "@appReviewDialogButtonAccept": {
+    "description": "Accept button of the App Review Dialog used on Android",
+    "type": "text",
+    "placeholders": {}
+  }
+}

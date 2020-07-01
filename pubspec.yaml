@@ -1,0 +1,111 @@
+name: jeepney_app
+description: Jeepney App
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  flutter_map: 0.5.6
+  #flutter_map:
+  #  git:
+  #    url: git@github.com:ubilabs/flutter_map.git
+  #    ref: feat/map_long_press
+
+  intl: 0.15.8
+  intl_translation: 0.17.5
+  app_review: 0.0.9+3
+  cupertino_icons: 0.1.2
+  diff_match_patch: 0.3.0
+  flare_flutter: 1.5.4
+  flutter_compass: 0.0.3
+  flutter_polyline_points: ^0.1.0
+  flutter_svg: 0.13.1
+  geolocator: 2.0.1
+  google_api_availability: 1.0.4
+  http: 0.12.0+4
+  mockito: 3.0.0
+  path_provider: 1.1.0
+  permission_handler: 2.1.2
+  rxdart: 0.18.1
+  shared_preferences: 0.4.3
+  sprintf: 4.0.0
+  synchronized: 2.0.2
+  url_launcher: 4.1.0+1
+  package_info: 0.3.2+1
+  global_configuration: 1.2.0
+  share: 0.6.2+1
+
+dev_dependencies:
+  flutter_driver:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/cfg/
+    - assets/data/
+    - assets/images/
+    # - assets/tiles/8/
+    # - assets/tiles/9/
+    # - assets/tiles/10/
+    # - assets/tiles/11/
+    # - assets/tiles/12/
+    # - assets/tiles/13/
+    # - assets/tiles/14/
+    # - assets/tiles/15/
+    # - test/assets/tile.png
+
+  fonts:
+  - family: CircleIcon
+    fonts:
+    - asset: fonts/CircleIcon.ttf
+  - family: GondolaIcon
+    fonts:
+    - asset: fonts/GondolaIcon.ttf
+  - family: CustomIcons
+    fonts:
+    - asset: fonts/CustomIcons.ttf
+  - family:  Jeepney
+    fonts:
+    - asset: fonts/Jeepney.ttf
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages

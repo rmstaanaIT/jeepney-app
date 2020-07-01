@@ -1,0 +1,586 @@
+{
+  "title": "Jeepney App",
+  "@title": {
+    "description": "The application's name",
+    "type": "text",
+    "placeholders": {}
+  },
+  "tagline": "Transporte público en Valenzuela City",
+  "@tagline": {
+    "description": "A short marketing sentence that describes the app",
+    "type": "text",
+    "placeholders": {}
+  },
+  "description": "La mejor forma de viajar en jeepneys por Valenzuela City.",
+  "@description": {
+    "description": "A sentence that describes the application's purpose",
+    "type": "text",
+    "placeholders": {}
+  },
+  "version": "Versión {version}",
+  "@version": {
+    "description": "The application's version",
+    "type": "text",
+    "placeholders": {
+      "version": {
+        "example": "1.0"
+      }
+    }
+  },
+  "alertLocationServicesDeniedTitle": "Ninguna ubicación",
+  "@alertLocationServicesDeniedTitle": {
+    "description": "Title of dialog that explains that access to location services was denied",
+    "type": "text",
+    "placeholders": {}
+  },
+  "alertLocationServicesDeniedMessage": "Asegúrese de que su dispositivo tenga GPS y que la configuración de Ubicación esté activada.",
+  "@alertLocationServicesDeniedMessage": {
+    "description": "Text of dialog that explains that access to location services was denied",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonOK": "Okay",
+  "@commonOK": {
+    "description": "OK button label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonCancel": "Cancelar",
+  "@commonCancel": {
+    "description": "Cancel button label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonGoOffline": "Salir de línea",
+  "@commonGoOffline": {
+    "description": "Go offline button label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonGoOnline": "Ir en línea",
+  "@commonGoOnline": {
+    "description": "Go online button label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonDestination": "Destino",
+  "@commonDestination": {
+    "description": "Destination field label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonOrigin": "Origen",
+  "@commonOrigin": {
+    "description": "Origin field label",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonNoInternet": "Sin conexión a Internet.",
+  "@commonNoInternet": {
+    "description": "Message when internet connection is lost",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonFailLoading": "Error al cargar datos",
+  "@commonFailLoading": {
+    "description": "Message when data could not be loaded",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonUnknownError": "Error desconocido",
+  "@commonUnknownError": {
+    "description": "Message when an unknown error has occured",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonError": "Error",
+  "@commonError": {
+    "description": "Message when an error has occured",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRouteError": "Lo sentimos, no pudimos encontrar una ruta. ¿Qué quieres hacer?",
+  "@noRouteError": {
+    "description": "Message when no route could be found after a route search",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRouteErrorActionCancel": "Prueba otro destino",
+  "@noRouteErrorActionCancel": {
+    "description": "Button label to try another destination when no route could be found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRouteErrorActionReportMissingRoute": "Informar una ruta faltante",
+  "@noRouteErrorActionReportMissingRoute": {
+    "description": "Button label to report a missing route when no route could be found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRouteErrorActionShowCarRoute": "Mostrar ruta en coche",
+  "@noRouteErrorActionShowCarRoute": {
+    "description": "Button label to show the car route when no route could be found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorServerUnavailable": "Lo sentimos. El planificador de viajes no está disponible temporalmente. Por favor, inténtelo de nuevo más tarde.",
+  "@errorServerUnavailable": {
+    "description": "Message that is displayed when the trip planning server was not available",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorOutOfBoundary": "El viaje no es posible. Quizás esté intentando planificar un viaje fuera del límite de datos del mapa.",
+  "@errorOutOfBoundary": {
+    "description": "Message that is displayed when a trip could not be planned, because it would be outside of map data boundaries",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorPathNotFound": "El viaje no es posible. Es posible que su punto de inicio o finalización no sea accesible de manera segura (por ejemplo, puede estar comenzando en una calle residencial conectada solo a una carretera).",
+  "@errorPathNotFound": {
+    "description": "Message that is displayed when a trip could not be planned, because the start or end point is not safely accessible",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorNoTransitTimes": "No hay tiempos de tránsito disponibles. La fecha puede ser pasada o muy lejana en el futuro o puede que no haya servicio de tránsito para su viaje en el momento que elija.",
+  "@errorNoTransitTimes": {
+    "description": "Message that is displayed when a trip could not be planned, because there were no valid transit times available for the requested time",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorServerTimeout": "El planificador de viajes tarda demasiado en procesar su solicitud. Por favor, inténtelo de nuevo más tarde.",
+  "@errorServerTimeout": {
+    "description": "Message that is displayed when a trip could not be planned, because the server is taking too long to respond",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorTrivialDistance": "El origen está a una distancia trivial del destino.",
+  "@errorTrivialDistance": {
+    "description": "Message that is displayed when a trip could not be planned, because origin and destination are too close to each other",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorServerCanNotHandleRequest": "La solicitud tiene errores que el servidor no está dispuesto o no puede procesar.",
+  "@errorServerCanNotHandleRequest": {
+    "description": "Message that is displayed when a trip could not be planned, because the request had errors",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorUnknownOrigin": "El origen es desconocido. ¿Puedes ser un poco más descriptivo?",
+  "@errorUnknownOrigin": {
+    "description": "Message that is displayed when a trip could not be planned, because the origin was not found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorUnknownDestination": "El destino es desconocido. ¿Puedes ser un poco más descriptivo?",
+  "@errorUnknownDestination": {
+    "description": "Message that is displayed when a trip could not be planned, because the destination was not found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorUnknownOriginDestination": "Tanto el origen como el destino son desconocidos. ¿Puedes ser un poco más descriptivo?",
+  "@errorUnknownOriginDestination": {
+    "description": "Message that is displayed when a trip could not be planned, because both origin and destination were not found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorNoBarrierFree": "Tanto el origen como el destino no son accesibles para sillas de ruedas.",
+  "@errorNoBarrierFree": {
+    "description": "Message that is displayed when a trip could not be planned, because both origin and destination are not wheelchair accessible",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorAmbiguousOrigin": "El planificador de viajes no está seguro de la ubicación desde la que desea comenzar. Seleccione entre las siguientes opciones o sea más específico.",
+  "@errorAmbiguousOrigin": {
+    "description": "Message that is displayed when a trip could not be planned, because the specified origin is ambiguous",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorAmbiguousDestination": "El planificador de viajes no está seguro de la ubicación a la que desea ir. Seleccione entre las siguientes opciones o sea más específico.",
+  "@errorAmbiguousDestination": {
+    "description": "Message that is displayed when a trip could not be planned, because the specified destination is ambiguous",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorAmbiguousOriginDestination": "Tanto el origen como el destino son ambiguos. Seleccione entre las siguientes opciones o sea más específico.",
+  "@errorAmbiguousOriginDestination": {
+    "description": "Message that is displayed when a trip could not be planned, because the specified origin and destination are ambiguous",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchHintOrigin": "Elige un punto de partida",
+  "@searchHintOrigin": {
+    "description": "Placeholder text for the origin field (in search state)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchHintDestination": "Elige destino",
+  "@searchHintDestination": {
+    "description": "Placeholder text for the destination field (in search state)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchItemChooseOnMap": "Elige en el mapa",
+  "@searchItemChooseOnMap": {
+    "description": "Search option that allows to choose a point on the map",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchItemYourLocation": "Tu ubicación",
+  "@searchItemYourLocation": {
+    "description": "Search option that allows to use the current user location",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchItemNoResults": "No hay resultados",
+  "@searchItemNoResults": {
+    "description": "Message that is displayed when no results were found for the search term that was provided",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchTitlePlaces": "Lugares",
+  "@searchTitlePlaces": {
+    "description": "Search section title for common places",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchTitleRecent": "Reciente",
+  "@searchTitleRecent": {
+    "description": "Search section title for recent location",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchTitleFavorites": "Favoritos",
+  "@searchTitleFavorites": {
+    "description": "Search section title for locations marked as favorites",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchTitleResults": "Resultados de la búsqueda",
+  "@searchTitleResults": {
+    "description": "Search section title for results found for the provided search term",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchPleaseSelectOrigin": "Seleccionar origen",
+  "@searchPleaseSelectOrigin": {
+    "description": "Placeholder text for the origin field (in map-visible state)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchPleaseSelectDestination": "Seleccionar destino",
+  "@searchPleaseSelectDestination": {
+    "description": "Placeholder text for the destination field (in map-visible state)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchFailLoadingPlan": "Error al cargar el plan.",
+  "@searchFailLoadingPlan": {
+    "description": "Message that is displayed when the response of the trip planning request could not be received",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchMapMarker": "Marcador de mapa",
+  "@searchMapMarker": {
+    "description": "Location name displayed in search fields that represents a location choosen on the map",
+    "type": "text",
+    "placeholders": {}
+  },
+  "chooseLocationPageTitle": "Elige un punto",
+  "@chooseLocationPageTitle": {
+    "description": "Page title when choosing a location on the map",
+    "type": "text",
+    "placeholders": {}
+  },
+  "chooseLocationPageSubtitle": "Mapa panorámico y zoom debajo del pin",
+  "@chooseLocationPageSubtitle": {
+    "description": "Page subtitle when choosing a location on the map",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionWalk": "Camina {duration} ( {distance} ) a {location}",
+  "@instructionWalk": {
+    "description": "Itinerary instruction (walking)",
+    "type": "text",
+    "placeholders": {
+      "duration": {
+        "example": "10 min"
+      },
+      "distance": {
+        "example": "500 m"
+      },
+      "location": {
+        "example": "Avenida Heroínas"
+      }
+    }
+  },
+  "instructionRide": "Viaje en {vehicle} por {duration} ( {distance} ) a {location}",
+  "@instructionRide": {
+    "description": "Itinerary instruction (vehicle)",
+    "type": "text",
+    "placeholders": {
+      "vehicle": {
+        "example": "Bus 100"
+      },
+      "duration": {
+        "example": "10 min"
+      },
+      "distance": {
+        "example": "500 m"
+      },
+      "location": {
+        "example": "Avenida Heroínas"
+      }
+    }
+  },
+  "instructionVehicleBus": "todoterreno",
+  "@instructionVehicleBus": {
+    "description": "Vehicle name (Bus)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionVehicleMicro": "Micro",
+  "@instructionVehicleMicro": {
+    "description": "Vehicle name (Micro)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionVehicleMinibus": "Microbús",
+  "@instructionVehicleMinibus": {
+    "description": "Vehicle name (Minibus)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionVehicleTrufi": "Trufi",
+  "@instructionVehicleTrufi": {
+    "description": "Vehicle name (Trufi)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionVehicleCar": "Coche",
+  "@instructionVehicleCar": {
+    "description": "Vehicle name (Car)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionVehicleGondola": "Góndola",
+  "@instructionVehicleGondola": {
+    "description": "Vehicle name (Gondola)",
+    "type": "text",
+    "placeholders": {}
+  },
+  "instructionDurationMinutes": "{value} min",
+  "@instructionDurationMinutes": {
+    "description": "Itinerary leg duration",
+    "type": "text",
+    "placeholders": {
+      "value": {
+        "example": "10"
+      }
+    }
+  },
+  "instructionDistanceKm": "{value} km",
+  "@instructionDistanceKm": {
+    "description": "Itinerary leg distance (km)",
+    "type": "text",
+    "placeholders": {
+      "value": {
+        "example": "10"
+      }
+    }
+  },
+  "instructionDistanceMeters": "{value} m",
+  "@instructionDistanceMeters": {
+    "description": "Itinerary leg distance (m)",
+    "type": "text",
+    "placeholders": {
+      "value": {
+        "example": "100"
+      }
+    }
+  },
+  "menuConnections": "Mostrar rutas",
+  "@menuConnections": {
+    "description": "Menu item that shows the map/planned trip",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuAbout": "Acerca de",
+  "@menuAbout": {
+    "description": "Menu item that shows the about page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuTeam": "Equipo",
+  "@menuTeam": {
+    "description": "Menu item that shows the team page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuFeedback": "Informar a LTFRB",
+  "@menuFeedback": {
+    "description": "Menu item that shows the feedback page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuOnline": "En línea",
+  "@menuOnline": {
+    "description": "Menu item that shows the state of online/offline routing",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuAppReview": "Califica la aplicación",
+  "@menuAppReview": {
+    "description": "Menu item that triggers a native widget to rate the app",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menuShareApp": "Comparte la aplicación",
+  "@menuShareApp": {
+    "description": "Menu item that triggers a native widget to rate the app",
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareAppText": "Descargue Jeepney App, la aplicación de transporte público para Valenzuela City, en {url}",
+  "@shareAppText": {
+    "description": "Text with URL that is used when sharing the app.",
+    "type": "text",
+    "placeholders": {
+      "url": {
+        "example": "https://trufi.share.url"
+      }
+    }
+  },
+  "feedbackContent": "¿Tiene quejas o desea presentar informes de jeepneys de servicios públicos (PUJ) en mora? Asegúrese de agregar el número de placa y el número de contacto *, para que podamos responderle.",
+  "@feedbackContent": {
+    "description": "Text displayed on the feedback page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "feedbackTitle": "Presentar una queja",
+  "@feedbackTitle": {
+    "description": "Title displayed on the feedback page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutContent": "Hemos desarrollado esta aplicación para facilitar que las personas utilicen el sistema de transporte en Valenzuela City y sus alrededores.",
+  "@aboutContent": {
+    "description": "Text displayed on the about page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutLicenses": "Licencias",
+  "@aboutLicenses": {
+    "description": "Button label to show licenses",
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutOpenSource": " ",
+  "@aboutOpenSource": {
+    "description": "A note about open source",
+    "type": "text",
+    "placeholders": {}
+  },
+  "teamContent": "Somos un equipo internacional llamado Trufi Association y hemos desarrollado esta app con la ayuda de muchos voluntarios. ¿Quieres mejorar la Trufi App y ser parte de nuestro equipo? ",
+  "@teamContent": {
+    "description": "Text displayed on the team page, followed by a email link",
+    "type": "text",
+    "placeholders": {}
+  },
+  "teamSectionRepresentatives": "Representantes: {representatives}",
+  "@teamSectionRepresentatives": {
+    "description": "List of representatives",
+    "type": "text",
+    "placeholders": {
+      "representatives": {
+        "example": "Mario, Luigi"
+      }
+    }
+  },
+  "teamSectionTeam": "Equipo: {teamMembers}",
+  "@teamSectionTeam": {
+    "description": "List of team members",
+    "type": "text",
+    "placeholders": {
+      "teamMembers": {
+        "example": "Peach, Toad, Daisy, Yoshi"
+      }
+    }
+  },
+  "teamSectionTranslations": "Traducciones: {translators}",
+  "@teamSectionTranslations": {
+    "description": "List of translators",
+    "type": "text",
+    "placeholders": {
+      "translators": {
+        "example": "Bowser, Koopa, Gumba, Lakitu"
+      }
+    }
+  },
+  "teamSectionRoutes": "Rutas: {routeContributors} y todos los usuarios que subieron rutas a OpenStreetMap, como {osmContributors}. ¡Contáctanos si quieres unirte a la comunidad OpenStreetMap!",
+  "@teamSectionRoutes": {
+    "description": "List of route contributors",
+    "type": "text",
+    "placeholders": {
+      "routeContributors": {
+        "example": "Wario, Waluigi, Rosalina"
+      },
+      "osmContributors": {
+        "example": "Kamek, Birdo, Toadette, Bowser Jr."
+      }
+    }
+  },
+  "donate": "Donar",
+  "@donate": {
+    "description": "Donate menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "readOurBlog": "Lee nuestro blog",
+  "@readOurBlog": {
+    "description": "Website menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "followOnFacebook": "Síguenos en Facebook",
+  "@followOnFacebook": {
+    "description": "Facebook menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "followOnTwitter": "Síguenos en Twitter",
+  "@followOnTwitter": {
+    "description": "Twitter menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "followOnInstagram": "Síguenos en Instagram",
+  "@followOnInstagram": {
+    "description": "Instagram menu item",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appReviewDialogTitle": "¿Estás disfrutando de Trufi?",
+  "@appReviewDialogTitle": {
+    "description": "Title of the App Review Dialog used on Android",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appReviewDialogContent": "Apóyanos con una reseña en Google Play Store.",
+  "@appReviewDialogContent": {
+    "description": "Content of the App Review Dialog used on Android",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appReviewDialogButtonDecline": "Ahora no",
+  "@appReviewDialogButtonDecline": {
+    "description": "Decline button of the App Review Dialog used on Android",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appReviewDialogButtonAccept": "Escribir un comentario",
+  "@appReviewDialogButtonAccept": {
+    "description": "Accept button of the App Review Dialog used on Android",
+    "type": "text",
+    "placeholders": {}
+  }
+}
